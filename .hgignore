@@ -1,0 +1,11 @@
+syntax: glob
+
+output
+*.swp
+*.log
+*.aux
+*.pdf
+*.eps
+*.out
+*.toc
+
