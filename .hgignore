@@ -9,3 +9,6 @@ output
 *.out
 *.toc
 
+dot/*.svg
+*.pdf_tex
+
