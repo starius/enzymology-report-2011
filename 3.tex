@@ -11,8 +11,56 @@ $$ m = McV = 0.68045 \text{g} $$
 
 FIXME gnuplot
 
-\subsection{Определение концентраций методом Брэдфорд}
+\subsection{Спектрофотометрическое опредление концентраций}
+Для всех тех проб действовали по следующей схеме:
+\begin{enumerate}
+\item набирали 2 ml бидистилированной воды в кювету
+\item обнуляли прибор
+\item доливали 50 µl раствора из пробы
+\item снимали значение $A_{280}$
+\end{enumerate}
+Таким образом, разведение равно 41.
+Было допущено, что удельное поглощение $\epsilon = 1$ для белка.
+Толщина кюветы $l = 1 \text{cm}$.
+Таким образом, концентрация белка в пробе равна [mg/ml]:
+$$ c=41 \cdot A $$
 
-FIXME graphviz
-\input{dot/br2-1.pdf_tex}
+\begin{tabular}{|c|c|c|}
+\hline
+Проба & A & C[mg/ml] \\
+\hline
+1 & 0.2 & 8.2 \\
+1 & 0.49 & 20 \\
+1 & 0.54 & 22 \\
+\hline
+2 & 0.0707 & 2.9 \\
+2 & 0.177 & 7.257 \\
+2 & 0.2 & 8.2 \\
+\hline
+3 & 0.154 & 6 \\
+\hline
+\end{tabular}
+
+\subsection{Определение концентраций белка методом Брэдфорд}
+
+Учитывая примерные концентрации, полученные спектрофотометрическим методом,
+раствор из проб развели так, чтобы концентрация лежала в пределах
+калибровочной кривой.
+
+\subsubsection{Проба 2}
+Начали анализ с \emph{пробы 2}, в связи с чем потребовалось 4 попытки,
+чтобы попасть в облась калибровочной кривой.
+
+\def\svgwidth{\linewidth}\input{dot/br2-0.pdf_tex}
+\def\svgwidth{\linewidth}\input{dot/br2-1.pdf_tex}
+\def\svgwidth{\linewidth}\input{dot/br2-2.pdf_tex}
+\def\svgwidth{\linewidth}\input{dot/br2-3.pdf_tex}
+
+Последние два опыта привели к желаемому результату.
+
+\subsubsection{Проба 1}
+\def\svgwidth{\linewidth}\input{dot/br1.pdf_tex}
+
+\subsubsection{Проба 3}
+\def\svgwidth{\linewidth}\input{dot/br3.pdf_tex}
 
