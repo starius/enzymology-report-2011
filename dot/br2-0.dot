@@ -1,0 +1,12 @@
+digraph G {
+Protein[label="Проба белка"];
+Buffer[label="Калий-фосфатный буфер"];
+Br[label="Брэдфорд"];
+K[label="Кювета"];
+Protein->K[label="20 µl"];
+Buffer->K[label="80 µl"];
+Br->K[label="1.9 ml"];
+K->Result;
+Result[label="A = 0.9099"];
+}
+
