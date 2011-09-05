@@ -11,10 +11,7 @@ all.pdf: *.tex $$(picts)
 	pdflatex all.tex
 
 clean:
-	rm `find -name '*.pdf'`
-	rm `find -name '*.eps'`
-	rm `find -name '*.aux'`
-	rm `find -name '*.log'`
+	rm $(wildcard *.pdf *.eps *.aux *.log *.out *.toc dot/*.pdf_tex dot/*.pdf dot/*.svg)
 
 .SECONDARY: $(dots:.dot=.svg) $(dots:.dot=.pdf)
 
