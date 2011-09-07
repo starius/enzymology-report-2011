@@ -12,6 +12,8 @@ output
 dot/*.svg
 *.pdf_tex
 
+gnuplot/*.tex
+
 *.orig
 *.org
 
