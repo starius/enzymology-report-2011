@@ -16,6 +16,14 @@ all.pdf: *.tex $$(picts)
 clean:
 	rm $(wildcard *.pdf *.eps *.aux *.log *.out *.toc dot/*.pdf_tex dot/*.pdf dot/*.svg)
 
+build-dep:
+	apt-get install texlive texlive-bibtex-extra texlive-fonts-extra \
+	texlive-formats-extra texlive-generic-extra texlive-lang-cyrillic \
+	texlive-latex-base texlive-latex-extra texlive-math-extra texlive-pictures \
+	texlive-science \
+	graphviz \
+	inkscape
+
 .SECONDARY: $(dots:.dot=.svg) $(dots:.dot=.pdf)
 
 dot/%.svg: dot/%.dot
