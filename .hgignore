@@ -17,3 +17,7 @@ gnuplot/*.tex
 *.orig
 *.org
 
+*.nlo
+*.nls
+*.ilg
+
