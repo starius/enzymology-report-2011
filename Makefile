@@ -22,7 +22,8 @@ build-dep:
 	texlive-latex-base texlive-latex-extra texlive-math-extra texlive-pictures \
 	texlive-science \
 	graphviz \
-	inkscape
+	inkscape \
+	gnuplot
 
 .SECONDARY: $(dots:.dot=.svg) $(dots:.dot=.pdf)
 
