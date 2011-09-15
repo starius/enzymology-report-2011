@@ -1,0 +1,40 @@
+digraph G {
+bf_1[label="75mM"];
+bf_2[label="7.5mM"];
+bf_3[label="0.75mM"];
+bf_1_80[label="80"];
+bf_1_40[label="40"];
+bf_1_20[label="20"];
+bf_1_10[label="10"];
+bf_2_100[label="100"];
+bf_2_80[label="80"];
+bf_2_60[label="60"];
+bf_2_40[label="40"];
+bf_2_20[label="20"];
+bf_2_10[label="10"];
+bf_3_100[label="100"];
+bf_3_80[label="80"];
+bf_3_60[label="60"];
+bf_3_40[label="40"];
+bf_3_20[label="20"];
+bf_3_10[label="10"];
+bf_1->bf_1_80;
+bf_1->bf_1_40;
+bf_1->bf_1_20;
+bf_1->bf_1_10;
+bf_1->bf_2[label="Развели в 10 раз"];
+bf_2->bf_2_100;
+bf_2->bf_2_80;
+bf_2->bf_2_60;
+bf_2->bf_2_40;
+bf_2->bf_2_20;
+bf_2->bf_2_10;
+bf_2->bf_3[label="Развели ещё в 10 раз"];
+bf_3->bf_3_100;
+bf_3->bf_3_80;
+bf_3->bf_3_60;
+bf_3->bf_3_40;
+bf_3->bf_3_20;
+bf_3->bf_3_10;
+}
+
