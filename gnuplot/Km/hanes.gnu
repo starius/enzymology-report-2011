@@ -1,7 +1,6 @@
 set key off
 set xlabel "S [µM]"
 set ylabel "$\\frac{S}{V}$ [$\\frac{\\text{µM} \cdot \\text{min}}{\\Delta D}$]"
-set xtics 50
 
 s_v(s) = Km/Vm + 1/Vm * s
 fit s_v(x) data using 1:($1/$2) via Vm, Km

@@ -44,4 +44,5 @@ gnuplot/%.eps: gnuplot/%.gnu
 .PHONY: Km
 Km:
 	$(MAKE) -C gnuplot/Km DATA=10
+	$(MAKE) -C gnuplot/Km DATA=17
 
