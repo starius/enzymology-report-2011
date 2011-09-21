@@ -12,7 +12,7 @@ output
 dot/*.svg
 *.pdf_tex
 
-gnuplot/*.tex
+gnuplot/**.tex
 
 *.orig
 *.org

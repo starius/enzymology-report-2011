@@ -10,7 +10,7 @@ picts = $(dot_pdf) $(gnu_pdf)
 
 build: all.pdf
 
-all.pdf: *.tex $$(picts)
+all.pdf: *.tex $$(picts) Km
 	pdflatex all.tex
 	makeindex all.nlo -s nomencl.ist -o all.nls
 	pdflatex all.tex
@@ -40,4 +40,8 @@ gnuplot/%.pdf: gnuplot/%.eps
 
 gnuplot/%.eps: gnuplot/%.gnu
 	cd gnuplot && gnuplot -e "set terminal epslatex; set output '$*.tex'" $*.gnu
+
+.PHONY: Km
+Km:
+	$(MAKE) -C gnuplot/Km DATA=10
 
