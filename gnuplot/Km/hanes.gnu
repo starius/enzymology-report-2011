@@ -7,6 +7,6 @@ fit s_v(x) data using 1:($1/$2) via Vm, Km
 
 plot data using 1:($1/$2), s_v(x)
 
-print "Km = ", Km, " µM"
+print "Km = ", Km, " µM; "
 print "Vm = ", Vm, " delta D/min"
 

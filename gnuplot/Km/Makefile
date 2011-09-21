@@ -10,5 +10,8 @@ all: $$(pdf)
 	epstopdf $<
 
 %-$(DATA).eps: %.gnu
-	gnuplot -e "set terminal epslatex; set output '$(@:.eps=.tex)'; data = '$(DATA).dat';" $< 2>&1 |tail --lines 2
+	gnuplot -e "set terminal epslatex; set output '$(@:.eps=.tex)'; data = '$(DATA).dat';" $< 2>&1 \
+		|tail --lines 2 > tmp.tex
+	echo '\n\n' >> $(@:.eps=.tex)
+	cat tmp.tex >> $(@:.eps=.tex)
 
