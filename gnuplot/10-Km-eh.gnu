@@ -1,6 +1,6 @@
 set key off
-set xlabel "V"
-set ylabel "V/S"
+set xlabel "V/S"
+set ylabel "V"
 
 v(v_s) = Vm - Km * v_s
 fit v(x) "10-Km.dat" using ($2/$1):2 via Vm, Km
