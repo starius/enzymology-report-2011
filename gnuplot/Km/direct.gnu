@@ -9,6 +9,6 @@ set yrange [0:*]
 set grid
 
 plot data using 1:2, v(x)
-print "Km = ", Km, " µM; "
-print "Vm = ", Vm, " delta D/min"
+
+load "print.inc"
 

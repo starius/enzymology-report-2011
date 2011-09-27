@@ -11,6 +11,5 @@ set grid
 
 plot data using 1:($1/$2), s_v(x)
 
-print "Km = ", Km, " µM; "
-print "Vm = ", Vm, " delta D/min"
+load "print.inc"
 
