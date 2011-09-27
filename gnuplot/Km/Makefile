@@ -11,7 +11,8 @@ all: $$(pdf)
 
 %-$(DATA).eps: %.gnu
 	gnuplot -e "set terminal epslatex; set output '$(@:.eps=.tex)'; data = '$(DATA).dat';" $< 2>&1 \
-		|tail --lines 2 > tmp.tex
+		|tail --lines 2 > $(@:.eps=.tex).tmp
 	echo " " >> $(@:.eps=.tex)
-	cat tmp.tex >> $(@:.eps=.tex)
+	cat $(@:.eps=.tex).tmp >> $(@:.eps=.tex)
+	rm $(@:.eps=.tex).tmp
 
