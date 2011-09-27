@@ -1,3 +1,4 @@
+set title "Координаты Хейнса"
 set key off
 set xlabel "S [mM]"
 set ylabel "$\\frac{S}{V}$ [$\\frac{\\text{mM} \cdot \\text{min}}{\\text{µmol}}$]"

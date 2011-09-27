@@ -1,3 +1,4 @@
+set title "Координаты Лайнуивера-Берка"
 set key off
 set xlabel "$\\frac{1}{S}$ [$\\frac{1}{\\text{µM}}$]"
 set ylabel "$\\frac{1}{V}$ [$\\frac{\\text{min}}{\\text{µmol}}$]"

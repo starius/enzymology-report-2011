@@ -1,3 +1,4 @@
+set title "Координаты Еди-Хофсти"
 set key off
 set xlabel "V/S [$\\frac{\\text{µmol}}{\\text{min} \\cdot \\text{mM}}$]"
 set ylabel "V [$\\frac{\\text{µmol}}{\\text{min}}$]

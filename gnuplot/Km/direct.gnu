@@ -1,3 +1,4 @@
+set title "Прямые координаты"
 set key off
 set xlabel "S [µM]"
 set ylabel "V [$\\frac{\\text{µmol}}{\\text{min}}$]"
