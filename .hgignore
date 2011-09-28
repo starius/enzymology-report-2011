@@ -21,3 +21,5 @@ gnuplot/**.tex
 *.nls
 *.ilg
 
+img/ef-2.svg
+

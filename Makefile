@@ -4,7 +4,7 @@ dot_pdf = $(dots:.dot=.pdf)
 gnuplots = $(wildcard gnuplot/*.gnu)
 gnu_pdf = $(gnuplots:.gnu=.pdf)
 
-picts = $(dot_pdf) $(gnu_pdf)
+picts = $(dot_pdf) $(gnu_pdf) img/ef-2.pdf
 
 .SECONDEXPANSION:
 
@@ -34,6 +34,12 @@ dot/%.svg: dot/%.dot
 
 dot/%.pdf: dot/%.svg
 	inkscape -z --export-pdf=$@ --export-latex $<
+
+img/%.pdf: img/%.svg
+	inkscape -z --export-pdf=$@ --export-latex $<
+
+img/ef-2.svg: img/ef-2.svg.in
+	sed 's@{PWD}@$(shell pwd)@' < $< > $@
 
 gnuplot/%.pdf: gnuplot/%.eps
 	epstopdf $<
