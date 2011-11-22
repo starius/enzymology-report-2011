@@ -48,6 +48,7 @@ $$ A_{280} = \epsilon c l $$
 4 & 0.148 & 32.7 \\
 \hline
 \end{tabular}
+\label{table-spm}
 \end{table}
 
 \subsection{Введение в метод Брэдфорд}
@@ -106,39 +107,20 @@ $$ c = \frac{m \cdot N}{V_c} $$
 $N$ -- разведение,
 $V_c$ -- объем кюветы (2 ml).
 
-\subsubsection{Проба 2}
-Начали анализ с \emph{пробы 2}, в связи с чем потребовалось 4 попытки,
-чтобы попасть в облась калибровочной кривой.
-
-\def\svgwidth{\linewidth}\input{dot/br2-0.pdf_tex}
-
-\def\svgwidth{\linewidth}\input{dot/br2-1.pdf_tex}
-Содержание белка: $ m = \frac{A-A_0}{k} = 53.97 $ µg белка на кювету. \\
-Разведение: $ N = 400 $ раз.
-Концентарция белка в пробе: $ c = \frac{m \cdot N}{V_c} = 10.8 $ mg/ml.
-
-\def\svgwidth{\linewidth}\input{dot/br2-2.pdf_tex}
-Содержание белка: $ m = \frac{A-A_0}{k} = 35.32 $ µg белка на кювету. \\
-Разведение: $ N = 1000 $ раз.
-Концентарция белка в пробе: $ c = \frac{m \cdot N}{V_c} = 17.6 $ mg/ml.
-
-\def\svgwidth{\linewidth}\input{dot/br2-3.pdf_tex}
-Содержание белка: $ m = \frac{A-A_0}{k} = 25.07 $ µg белка на кювету. \\
-Разведение: $ N = 2000 $ раз.
-Концентарция белка в пробе: $ c = \frac{m \cdot N}{V_c} = 25.1 $ mg/ml.
-
-Последние два опыта привели к желаемому результату
-(A находится в области калибровочной прямой).
-
-\subsubsection{Проба 1}
-\def\svgwidth{\linewidth}\input{dot/br1.pdf_tex}
-Содержание белка: $ m = \frac{A-A_0}{k} = 7.8 $ µg белка на кювету. \\
-Разведение: $ N = 4000 $ раз.
-Концентарция белка в пробе: $ c = \frac{m \cdot N}{V_c} = 15.6 $ mg/ml.
-
-\subsubsection{Проба 3}
-\def\svgwidth{\linewidth}\input{dot/br3.pdf_tex}
-Содержание белка: $ m = \frac{A-A_0}{k} = 6.2 $ µg белка на кювету. \\
-Разведение: $ N = 2000 $ раз.
-Концентарция белка в пробе: $ c = \frac{m \cdot N}{V_c} = 6.2 $ mg/ml.
+\begin{table}[htbp]
+\caption{Концентрация белка, определенная способом Брэдфорд}
+\begin{tabular}{|c|c|}
+\hline
+Проба & C[mg/ml] \\
+\hline
+1 & 15.6 \\
+\hline
+\multirow{2}{*}{2} & 17.6 \\
+& 25.1 \\
+\hline
+3 & 6.2 \\
+\hline
+\end{tabular}
+\label{table-bredford}
+\end{table}
 
