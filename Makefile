@@ -4,7 +4,7 @@ dot_pdf = $(dots:.dot=.pdf)
 gnuplots = $(wildcard gnuplot/*.gnu)
 gnu_pdf = $(gnuplots:.gnu=.pdf)
 
-picts = $(dot_pdf) $(gnu_pdf) img/ef-2.pdf
+picts = $(dot_pdf) $(gnu_pdf) img/ef-2.pdf img/Coomassie_Brilliant_Blue_G-250.pdf
 
 .SECONDEXPANSION:
 
