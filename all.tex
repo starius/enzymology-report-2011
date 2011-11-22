@@ -11,6 +11,7 @@
 \usepackage{gensymb}
 \usepackage[russian]{nomencl}
 \usepackage{color}
+\usepackage{caption2}
 
 \graphicspath{{dot/}{gnuplot/}{gnuplot/Km/}{img/}}
 
@@ -18,6 +19,19 @@
 \geometry{bottom=3cm}
 \geometry{left=3cm}
 \geometry{right=2cm}
+
+\renewcommand{\captionfont}{\small \sffamily} % \bfseries
+\renewcommand{\captionlabeldelim}{.~}
+
+\let\originaltable\table
+\let\endoriginaltable\endtable
+\renewenvironment{table}[1][ht]{\originaltable[#1]\centering}
+{\endoriginaltable}
+
+\let\originalfigure\figure
+\let\endoriginalfigure\endfigure
+\renewenvironment{figure}[1][ht]{\originalfigure[#1]\centering}
+{\endoriginalfigure}
 
 \makenomenclature
 
