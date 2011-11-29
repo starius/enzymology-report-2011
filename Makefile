@@ -14,6 +14,7 @@ all.pdf: *.tex $$(picts) Km
 	pdflatex all.tex
 	makeindex all.nlo -s nomencl.ist -o all.nls
 	pdflatex all.tex
+	ln -f all.pdf all-`date +%F`.pdf
 
 clean:
 	rm $(wildcard *.pdf *.eps *.aux *.log *.out *.toc dot/*.pdf_tex dot/*.pdf dot/*.svg)
