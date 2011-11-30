@@ -51,7 +51,11 @@ $$ \text{чистота} = \frac{49 mM}{75 mM} = 0.65 (65 \%) $$
 \item использовали натриевую соль фруктозобисфосфата (M = 340 Da) (см \ref{bisphosphate}).
 \end{enumerate}
 
-\subsubsection{Зависимость скорости реакции от концентрации субстрата}
+В таблице~\ref{table-s-to-v} представлена зависимость скорости реакции
+от концентрации субстрата (бисфосфата).
+
+\begin{table}[htbp]
+\caption{Зависимость скорости реакции от концентрации субстрата}
 \begin{tabular}{|c|c|c|c|}
 \hline
 S [µM] &
@@ -72,20 +76,46 @@ V [µmol NADH/min] \\
 2.437 & 0.004 &  0.00064 & 0.00129 \\
 \hline
 \end{tabular}
+\label{table-s-to-v}
+\end{table}
 
 Значение A трех последних точек слишком низкое.
 Эти точки были исключены из дальнейшего рассмотрения.
+На рисунках~\ref{km-direct}, \ref{km-reverse}, \ref{km-hanes} и \ref{km-eh}
+представлена зависимость скорости от концентрации субстрата (бисфосфата)
+в различных координатах, а также линия аппроксимации и значения $K_M$ и $V_M$.
+В таблице~\ref{table-km-and-vm} информация $K_M$ и $V_M$ собрана воедино.
 
+\begin{figure}[htbp]
 \input{gnuplot/Km/direct-17-1}
+\caption{Кинетический график.
+    Прямые координаты.}
+\label{km-direct}
+\end{figure}
 
+\begin{figure}[htbp]
 \input{gnuplot/Km/reverse-17-1}
+\caption{Кинетический график.
+    Координаты Лайнуивера-Берка.}
+\label{km-reverse}
+\end{figure}
 
+\begin{figure}[htbp]
 \input{gnuplot/Km/hanes-17-1}
+\caption{Кинетический график.
+    Координаты Хэйнса.}
+\label{km-hanes}
+\end{figure}
 
+\begin{figure}[htbp]
 \input{gnuplot/Km/eh-17-1}
+\caption{Кинетический график.
+    Координаты Еди-Хофсти.}
+\label{km-eh}
+\end{figure}
 
-\subsection{Результаты}
-
+\begin{table}[htbp]
+\caption{Значения $K_M$ и $V_M$}
 \begin{tabular}{|c|c|c|}
 \hline
 Координаты & Km, µM & Vm, $\frac{\text{µmol} S}{\text{min}}$ \\
@@ -99,8 +129,9 @@ V [µmol NADH/min] \\
                                                & 52 & \\
 \hline
 \end{tabular}
+\label{table-km-and-vm}
+\end{table}
 
-\subsection{Обсуждение}
 Значения Km, полученные в разных координатах, хорошо согласуются между собой
 и несильно отличаются от литературных значений (отличие меньше, чем на порядок).
 
